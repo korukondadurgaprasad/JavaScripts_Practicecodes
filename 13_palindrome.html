@@ -1,0 +1,22 @@
+<!-- code to check if a string is a palindrome in JavaScript -->
+ <html>
+    <script>
+        function palin(s)
+        {
+             var left=0;
+             var right=s.length-1;
+             while(left<right)
+             {
+                if (s[left]!=s[right])
+             {
+                return "False";
+             }
+             return "True";
+             }
+             left++;
+             right--;
+        }
+        document.write(palin("madamr"))
+
+    </script>
+ </html>
