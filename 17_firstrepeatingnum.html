@@ -1,0 +1,12 @@
+<!-- Question: Imagine you have an array of integers. Write a function that finds the first repeating element in the array. If there are no repeating elements, return -1 -->
+
+function firstRepeatingElement(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                return arr[i]; // Return the first repeating element
+            }
+        }
+    }
+    return -1; // Return -1 if no repeating element is found
+}
