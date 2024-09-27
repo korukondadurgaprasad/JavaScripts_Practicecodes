@@ -1,0 +1,14 @@
+<!-- Problem: Find Maximum Number in an Array
+Write a JavaScript function that takes an array of numbers as input and returns the maximum number in the array. -->
+function findMax(arr) {
+let max=0
+for(let i=0;i<arr.length;i++){ if(arr[i]>max){
+    max=arr[i]
+    }
+    }
+    return max
+    }
+
+    // Example usage:
+    let arr = [2, 8, 5, 1, 7];
+    console.log(findMax(arr)); // Expected output: 8

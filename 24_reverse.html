@@ -1,0 +1,26 @@
+
+<!-- Problem: Reverse a String
+Write a JavaScript function that takes a string as input and returns the string reversed -->
+
+function reverseString(str) {
+    let arr = str.split('');  // Convert string to array of characters
+    let left = 0;
+    let right = arr.length - 1;
+
+    // Use two-pointer approach to reverse the array
+    while (left < right) {
+        // Swap characters
+        let temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        
+        left++;
+        right--;
+    }
+
+    return arr.join('');  // Convert array back to string and return
+}
+
+// Example usage:
+let str = "hello";
+console.log(reverseString(str));  // Expected output: "olleh"
