@@ -1,0 +1,18 @@
+<!-- Day 6: Problem (Intermediate - Palindrome Checker)
+Problem: Check for Palindrome -->
+
+<!-- Write a JavaScript function that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward (ignoring spaces, punctuation, and capitalization). -->
+function isPalindrome(s) {
+    // Step 1: Clean the string
+    const cleaned = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    
+    // Step 2: Reverse the cleaned string
+    const reversed = cleaned.split('').reverse().join('');
+    
+    // Step 3: Check if the cleaned string is the same as the reversed string
+    return cleaned === reversed;
+}
+
+// Example usage:
+console.log(isPalindrome("A man, a plan, a canal: Panama")); // Expected output: true
+console.log(isPalindrome("race a car"));                       // Expected output: false
