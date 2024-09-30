@@ -1,0 +1,22 @@
+// Function to check if a number is a perfect square
+function isPerfectSquare(num) {
+let sqrt = Math.sqrt(num);
+return sqrt === Math.floor(sqrt); // True if sqrt is an integer
+}
+
+// Function to check if a number is a Fibonacci number
+function isFibonacci(num) {
+// Apply the property: 5*num^2 + 4 or 5*num^2 - 4 should be a perfect square
+let n1 = 5 * num * num + 4;
+let n2 = 5 * num * num - 4;
+
+// Check if either n1 or n2 is a perfect square
+return isPerfectSquare(n1) || isPerfectSquare(n2);
+}
+
+// Test the function with examples
+let num1 = 5;
+let num2 = 4;
+
+console.log(isFibonacci(num1)); // Output: true (since 5 is a Fibonacci number)
+console.log(isFibonacci(num2)); // Output: true (since 4 is not a Fibonacci number)
