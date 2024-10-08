@@ -1,0 +1,12 @@
+<!-- Challenge 8: Create a Countdown Timer
+Problem: Write a function that returns a countdown from a given number. -->
+function countdown(num) {
+    const result = [];
+    for (let i = num; i >= 0; i--) {
+        result.push(i);
+    }
+    return result;
+}
+
+// Example usage:
+console.log(countdown(5)); // Output: [5, 4, 3, 2, 1, 0]

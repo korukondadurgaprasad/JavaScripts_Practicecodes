@@ -1,0 +1,8 @@
+<!-- Challenge 10: Generate Random Integer Between Two Values
+Problem: Write a function that generates a random integer between two values (inclusive). -->
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Example usage:
+console.log(getRandomInt(1, 10)); // Output: A random integer between 1 and 10

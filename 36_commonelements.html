@@ -1,0 +1,9 @@
+<!-- 
+Challenge 4: Find the Common Elements Between Two Arrays
+Problem: Write a function that finds common elements between two arrays. -->
+function findCommonElements(arr1, arr2) {
+    return arr1.filter(item => arr2.includes(item));
+}
+
+// Example usage:
+console.log(findCommonElements([1, 2, 3], [2, 3, 4])); // Output: [2, 3]

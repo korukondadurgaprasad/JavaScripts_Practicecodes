@@ -1,0 +1,19 @@
+<!-- Challenge 2: Find the Second Largest Number
+Problem: Write a function that finds the second largest number in an array. -->
+function secondLargest(arr) {
+    // Remove duplicates and sort the array in descending order
+    const uniqueSortedArr = Array.from(new Set(arr)).sort((a, b) => b - a);
+
+    // Check if there are at least two unique numbers
+    if (uniqueSortedArr.length < 2) return null;
+
+    // Return the second largest number
+    return uniqueSortedArr[1];
+}
+
+// Example usage:
+console.log(secondLargest([3, 5, 7, 2, 8])); // Output: 7
+console.log(secondLargest([10]));              // Output: null
+console.log(secondLargest([1, 1, 1]));         // Output: null
+console.log(secondLargest([1, 2, 3, 4, 5]));   // Output: 4
+console.log(secondLargest([5, 5, 5, 5, 4]));   // Output: 4
