@@ -1,18 +1,13 @@
 <!-- Given number is prime or not  -->
-<html>
-    <script>
-        let num =10;
-        // prime number
-        for (var a=2;a<10;a++){
-            if (num%a==0){
-                console.log(num+" is not a prime number");
-                break;
-            }
-            else
-            {
-                console.log(num+" is a prime number");
-                }
-        }
-    
-    </script>
-</html>
+def prime(a):
+    if a<=1:
+        return "Not prime"
+    for i in range(2,a):
+        if a%i==0:
+            return "Not prime"
+            # break
+    return "Prime"
+
+a=7
+
+print(prime(a))
