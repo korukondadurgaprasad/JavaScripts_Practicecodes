@@ -1,12 +1,14 @@
 <!-- Write a function that takes a number as input and returns its square. -->
- <html>
-    <script>
-        function square(num)
-        {
-            return num * num;
-        }
-        var result =square(5)
-        document.write(result);
+def square(num):
+    return num**2
+num=9
+print(square(num))
 
-    </script>
- </html>
+
+import math
+
+def square(num):
+    return math.sqrt(num)
+
+num = 9
+print(square(num))
