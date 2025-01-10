@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        function linearSearch(arr, target) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === target) {
-            return i; // Return the index if the target is found
-        }
-    }
-    return -1; // Return -1 if the target is not found
-}
-    </script>
-</body>
-</html>
+<!-- LINEAR SEARCH -->
+def linearsearch(arr,val):
+for i in range(len(arr)):
+    if arr[i]==val:
+        return "element found at index:",i
+return "Element not found"
+arr=[1,2,23,4,5]
+val =23
+print(linearsearch(arr,val))

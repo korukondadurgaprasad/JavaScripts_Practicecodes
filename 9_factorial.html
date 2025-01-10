@@ -1,23 +1,12 @@
 <!-- Write a function that takes a number as input and returns its factorial. The factorial of a number n is the product of all positive integers less than or equal to n.
   -->
-<html>
-    <script>
-        function factorial(n){
-            if (n==0 || n==1)
-            {
-                return 1;
-            }
-            else{
-                 var result =1
-                for (var i=1; i<=n; i++)
-                {
-                    result*=i
-                }
-                return result;
-            }
-
-        }
-        var n=5;
-        document.write(factorial(n));
-    </script>
-</html>
+  def fac(num):
+  res=1
+  if num==0 or num==1:
+      return 1
+  else:
+      for i in range(1,num+1):
+          res=res*i
+      return res
+num=5
+print(fac(num))
