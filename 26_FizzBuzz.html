@@ -1,21 +1,16 @@
-<!-- Day 5: Problem (Intermediate - FizzBuzz)
-Problem: FizzBuzz
-Write a JavaScript function that takes an integer n as input and returns an array of strings with the following rules: -->
-function fizzBuzz(n) {
-    let res = [];
-    for (let i = 1; i <= n; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            res.push("FizzBuzz");
-        } else if (i % 3 === 0) {
-            res.push("Fizz");
-        } else if (i % 5 === 0) {
-            res.push("Buzz"); // Fixed the typo here
-        } else {
-            res.push(String(i));
-        }
-    }
-    return res;
-}
+def fun(a,b):
+res=[]
+for i in range(a,b):
+    if i % 3 == 0 and i % 5 == 0:
+        res.append("FizzBuzz")
+    elif i % 3 == 0:
+        res.append("Fizz")
+    elif i % 5 == 0:
+        res.append("Buzz")
+    else:
+        res.append(str(i))
+return res
 
-// Example usage:
-console.log(fizzBuzz(15)); // Expected output: ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]
+a=1
+b=21
+print(fun(a,b))

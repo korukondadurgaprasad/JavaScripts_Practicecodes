@@ -1,27 +1,10 @@
  <!-- Count Vowels in a String -->
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-        let a = "aeiouAEIOU"; 
-let b = "Prasad"; 
-let x = 0; 
-
-for (let i of b) {
-   
-    if (a.includes(i)) {
-        x++; l
-    }
-}
-
-console.log(x);
-
-    </script>
-    
-  </body>
-  </html>
+ def vol(arr):
+ count =0
+ a="aeiouAEIOU"
+ for i in a:
+     if i in arr:
+         count+=1
+ return count
+arr="Pqwemnbfrw"
+print(vol(arr))

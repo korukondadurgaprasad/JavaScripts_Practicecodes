@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let a=[[1,2,3],[4,5,80],[5,7,8]]
-let max=0
-for(let i=0;i<a.length;i++){
-    for(let j=0;j<a[i].length;j++){
-        if(a[i][j] > max){
-            max=a[i][j]
-        }
-    }
-}
-console.log(max)
-    </script>
-    
-</body>
-</html>
+arr=[[1,2,3],[4,5,80],[5,7,8]]
+max=0
+for i in range(len(arr)):
+    for j in range(len(arr[i])):
+        if arr[i][j]>max:
+            max=arr[i][j]
+print(max)

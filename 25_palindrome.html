@@ -1,21 +1,9 @@
 <!-- problem: Check if a String is a Palindrome
-Write a JavaScript function that takes a string as input and returns true if the string is a palindrome (reads the same forward and backward), and false otherwise. -->
+-->
+s = s.replace(" ", "").lower()
 
-function isPalindrome(str) {
-    let left = 0;
-    let right = str.length - 1;
-
-    // Use two-pointer approach to check for palindrome
-    while (left < right) {
-        if (str[left] !== str[right]) {
-            return false; // If characters do not match, it's not a palindrome
-        }
-        left++;
-        right--;
-    }
-    return true; // If all characters matched, it is a palindrome
-}
-
-// Example usage:
-console.log(isPalindrome("racecar"));  // Expected output: true
-console.log(isPalindrome("hello"));     // Expected output: 
+# Compare the string with its reverse
+if s == s[::-1]:
+    return True
+else:
+    return False
