@@ -1,9 +1,17 @@
 <!-- Count Vowels in a String
 Write a function that counts the number of vowels in a given string -->
-function countVowels(str) {
-    const vowels = 'aeiouAEIOU';
-    return [...str].filter(char => vowels.includes(char)).length;
-}
-
-// Example usage:
-console.log(countVowels("hello world")); // Output: 3
+def count_vowels(s):
+    # Define the vowels (both lowercase and uppercase)
+    vowels = "aeiouAEIOU"
+    
+    # Initialize a counter to 0
+    count = 0
+    
+    # Loop through each character in the string
+    for char in s:
+        # Check if the character is a vowel
+        if char in vowels:
+            count += 1
+    
+    # Return the final count of vowels
+    return count

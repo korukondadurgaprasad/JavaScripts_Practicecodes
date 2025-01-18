@@ -1,34 +1,11 @@
 <!-- Day 6: Merge Two Arrays
 Create a function that merges two arrays and removes duplicates -->
-function mergeArrays(arr1, arr2) {
-    // Create a new array to hold the merged values
-    const mergedArray = [...arr1];
-
-    // Loop through the second array
-    for (let i = 0; i < arr2.length; i++) {
-        // Check if the current element is not already in the mergedArray
-        if (!mergedArray.includes(arr2[i])) {
-            // If it's not, add it to the mergedArray
-            mergedArray.push(arr2[i]);
-        }
-    }
-
-    return mergedArray;
-}
-
-// Example usage:
-const array1 = [1, 2, 3, 4, 5];
-const array2 = [4, 5, 6, 7, 8];
-
-const mergedArray = mergeArrays(array1, array2);
-console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
-
-
-
-<!-- function mergeArrays(arr1, arr2) {
-    // Create a new Set to merge both arrays and automatically remove duplicates
-    const mergedSet = new Set([...arr1, ...arr2]);
+def merge_and_remove_duplicates(arr1, arr2):
+    # Merge both arrays
+    merged_array = arr1 + arr2
     
-    // Convert the Set back to an array
-    return Array.from(mergedSet); -->
-<!-- } -->
+    # Remove duplicates by converting to a set
+    unique_array = list(set(merged_array))
+    
+    # Return the result
+    return unique_array
