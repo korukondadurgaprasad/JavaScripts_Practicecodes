@@ -1,8 +1,7 @@
 <!-- Challenge 3: Remove All Falsy Values
 Problem: Create a function that removes all falsy values (false, null, 0, "", undefined, and NaN) from an array. -->
-function removeFalsyValues(arr) {
-    return arr.filter(Boolean);
-}
+def remove_falsy_values(arr):
+    return [item for item in arr if item]
 
-// Example usage:
-console.log(removeFalsyValues([0, 1, false, 2, '', 3])); // Output: [1, 2, 3]
+# Example usage:
+print(remove_falsy_values([0, 1, False, 2, '', 3]))  # Output: [1, 2, 3]
