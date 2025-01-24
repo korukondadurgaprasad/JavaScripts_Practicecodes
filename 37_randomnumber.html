@@ -1,8 +1,9 @@
 <!-- Challenge 10: Generate Random Integer Between Two Values
 Problem: Write a function that generates a random integer between two values (inclusive). -->
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import random
 
-// Example usage:
-console.log(getRandomInt(1, 10)); // Output: A random integer between 1 and 10
+def get_random_int(min, max):
+    return random.randint(min, max)
+
+# Example usage:
+print(get_random_int(1, 10)) 
